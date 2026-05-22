@@ -3,54 +3,422 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wentian Xiao | Traffic & Geotechnical Engineering</title>
+    <title>Wentian Xiao | Traffic & Geotechnical Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="profile-image">
-          <img src="./headshot.jpg" alt="Student Headshot" class="headshot" />
-        </div>
-        <h1 class="name">Wentian (Sean) Xiao</h1>
-      </header>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
 
-      <section class="main-content">
-        <div class="section degree">
-          <h2>Degree & Major</h2>
-          <p>Master of Engineering (Extension), Geotechnical Engineering | University of Technology Sydney</p>
-        </div>
-
-        <div class="section involvement">
-          <h2>Career Interests</h2>
-          <ul>
-              <li>Traffic engineering and transport planning</li>
-              <li>Geotechnical engineering and site investigation</li>
-              <li>Road and pavement engineering</li>
-              <li>GIS-based analysis for infrastructure projects</li>
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">Wentian Xiao</div>
+        <nav class="nav">
+          <ul class="nav-list">
+<li><a href="#home" class="nav-link active">Home</a></li>
+<li><a href="#resume" class="nav-link">Resume</a></li>
+<li><a href="#hobbies" class="nav-link">Projects</a></li>
+<li><a href="#favorites" class="nav-link">Experience</a></li>
           </ul>
+        </nav>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+      </div>
+    </header>
 
-        <div class="section vision">
-          <h2>Personal Vision</h2>
-          <p>
-                I am developing my career towards traffic engineering and geotechnical engineering.
-                My study covers traffic and transportation, road engineering, pavement design,
-                applied geotechnics and GIS. With previous experience in structural design and
-                design coordination, I hope to contribute to practical, safe and sustainable
-                infrastructure projects in Australia.
-          </p>
+    <!-- Main Content -->
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section">
+        <div class="container">
+          <div class="home-content">
+            <div class="home-img">
+              <!-- CHANGE YOOR HEAD PHOTO HERE  -->
+              <img src="./headshot.jpg" alt="Your Name Profile Photo" />
+            </div>
+            <div class="home-text">
+              <!-- Change your Name here -->
+              <h1>Hi, I'm <span class="highlight">Wentian (Sean) Xiao</span></h1>
+              <h2>Traffic Engineering & Geotechnical Engineering</h2>
+              <p>
+                I am a Master of Engineering student at the University of Technology Sydney,
+                developing my career towards traffic engineering and geotechnical engineering.
+                My interests include transport planning, road and pavement engineering,
+                applied geotechnics, GIS-based analysis, and infrastructure projects.
+              </p>
+              <div class="cta-buttons">
+                <a href="#resume" class="btn primary-btn">View Resume</a>
+                <!-- change your email address -->
+                <a href="mailto:SeanX0809@gmail.com" class="btn secondary-btn"
+                  >Get In Touch</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <footer>
-        <p>&copy; 2026 Wentian Xiao</p>
-      </footer>
-    </div>
+      <!-- Resume Section -->
+      <section id="resume" class="section">
+        <div class="container">
+          <h2 class="section-title">Resume</h2>
+          <div class="resume-container">
+            <!-- Education -->
+            <div class="resume-card">
+              <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2024 - 2026 Expected</span>
+                  <h4>Master of Engineering (Extension)</h4>
+                  <p>University of Technology Sydney</p>
+                  <p>Major in Geotechnical Engineering</p>
+                  <p>Currently WAM : 88.73</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2016 - 2017</span>
+                  <h4>Master of Civil Engineering and Environmental Science</h4>
+                  <p>University of Liverpool</p>
+                  <p>Graduated with Merit</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2010 - 2014</span>
+                  <h4>Bachelor of Geotechnical and Underground Construction Engineering</h4>
+                  <p>Chongqing Jiaotong University</p>
+                  <p>Final Project: The Structural Design of Wenchangge Tunnel</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="resume-card">
+              <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2024 - 2025</span>
+                  <h4>Office Intern</h4>
+                  <p>Tramix Pty Ltd.</p>
+                  <p>
+                    Assisted with quantity take-offs, engineering drawing review,
+                    and CAD-based drawing interpretation for Sydney-based projects.
+                  </p>
+                </div>
+            
+                <div class="timeline-item">
+                  <span class="date">2019 - 2024</span>
+                  <h4>Designing Project Manager</h4>
+                  <p>Guangju Lianfeng Architecture Design (Chongqing) Co., Ltd.</p>
+                  <p>
+                    Supported design process management, project coordination,
+                    technical documentation, BIM-related work, and communication with
+                    designers, developers, construction managers and government stakeholders.
+                  </p>
+                </div>
+            
+                <div class="timeline-item">
+                  <span class="date">2014 - 2015; 2017 - 2019</span>
+                  <h4>Structural Designer / Structural Designer Intern</h4>
+                  <p>Chongqing Hemei Architecture and Planning Design Co., Ltd.</p>
+                  <p>
+                    Prepared structural drawings, technical documentation and project
+                    specifications, and supported design reviews, construction changes
+                    and on-site technical services.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Academic Projects -->
+            <div class="resume-card">
+              <h3><i class="fas fa-project-diagram"></i> Academic Projects</h3>
+              <div class="skills-container">
+                <div class="skill-item">
+                  <p>GIS-Based Shelter Accessibility Gap Assessment</p>
+                  <div class="project-description">
+                    <p>
+                      Developed a GIS-based screening assessment of shelter accessibility
+                      gaps in Wollongong by integrating flood planning exposure, social
+                      vulnerability, candidate shelter-like facilities and walking-network
+                      accessibility.
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="skill-item">
+                  <p>GIS-Based Redevelopment of Victoria Park</p>
+                  <div class="project-description">
+                    <p>
+                      Used QGIS and QField in a group project to support site selection for
+                      event space and bioretention areas through buffer analysis, slope
+                      analysis and spatial exclusion methods.
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="skill-item">
+                  <p>SIDRA Road Intersection Design Assignment</p>
+                  <div class="project-description">
+                    <p>
+                      Applied SIDRA in a traffic engineering assignment to support road
+                      intersection design and evaluate traffic performance.
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="skill-item">
+                  <p>CIRCLY-Based Flexible Pavement Design Project</p>
+                  <div class="project-description">
+                    <p>
+                      Used CIRCLY to compare flexible pavement structures under different
+                      traffic levels and interpret pavement thickness, critical response and
+                      governing distress mechanisms.
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="skill-item">
+                  <p>PLAXIS 2D Foundation Bearing Capacity and Settlement Project</p>
+                  <div class="project-description">
+                    <p>
+                      Used PLAXIS 2D to model footing behaviour under loading and assess
+                      bearing capacity, settlement response, deformed mesh and displacement
+                      results.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Community & Leadership Experience -->
+            <div class="resume-card">
+              <h3><i class="fas fa-hands-helping"></i> Community & Leadership Experience</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2025</span>
+                  <h4>UTS FEIT Representative</h4>
+                  <p>International Strategic Management Workshop, Poznan University of Technology</p>
+                  <p>
+                    Participated in an international workshop focused on strategic management,
+                    teamwork, and cross-cultural communication.
+                  </p>
+                </div>
+            
+                <div class="timeline-item">
+                  <span class="date">Nov 2025 - Present</span>
+                  <h4>Volunteer</h4>
+                  <p>NSW International Student Volunteer Program</p>
+                  <p>
+                    Supported volunteering activities and community engagement initiatives
+                    for international students and the wider community in NSW.
+                  </p>
+                </div>
+            
+                <div class="timeline-item">
+                  <span class="date">2025</span>
+                  <h4>City of Sydney New Year's Eve Volunteer</h4>
+                  <p>Large-scale public event support</p>
+                  <p>
+                    Supported event operations and crowd guidance during a major public event
+                    in Sydney.
+                  </p>
+                </div>
+            
+                <div class="timeline-item">
+                  <span class="date">2024 - 2025</span>
+                  <h4>UTS BUILD Program and UTS SOUL Award</h4>
+                  <p>Global leadership and community engagement</p>
+                  <p>
+                    Developed communication, leadership, and community engagement skills
+                    through university-supported programs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          <div class="resume-action">
+            <a href="./resume.pdf" class="btn primary-btn" id="downloadResume"
+              >Download Full Resume <i class="fas fa-download"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="hobbies" class="section">
+        <div class="container">
+          <h2 class="section-title">Selected Coursework Projects</h2>
+          <div class="hobbies-grid">
+            <div class="hobby-card">
+              <img src="./capstone-gis.png" alt="Capstone GIS project screenshot" class="project-image" />
+              <div class="hobby-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <h3>GIS-Based Shelter Accessibility Assessment</h3>
+              <p>
+                A capstone GIS project assessing shelter accessibility gaps in Wollongong
+                by integrating flood planning exposure, social vulnerability and
+                walking-network accessibility.
+              </p>
+            </div>
+      
+            <div class="hobby-card">
+              <img src="./victoria-park-gis.jpg" alt="Victoria Park GIS project screenshot" class="project-image" />
+              <div class="hobby-icon">
+                <i class="fas fa-tree"></i>
+              </div>
+              <h3>GIS-Based Redevelopment of Victoria Park</h3>
+              <p>
+                A group GIS project using QGIS and QField for site selection, buffer
+                analysis, slope analysis and spatial exclusion analysis.
+              </p>
+            </div>
+      
+            <div class="hobby-card">
+              <img src="./sidra-project.png" alt="SIDRA traffic assignment screenshot" class="project-image" />
+              <div class="hobby-icon">
+                <i class="fas fa-traffic-light"></i>
+              </div>
+              <h3>SIDRA Road Intersection Design</h3>
+              <p>
+                A traffic engineering assignment using SIDRA to support road intersection
+                design and evaluate traffic performance.
+              </p>
+            </div>
+      
+            <div class="hobby-card">
+              <img src="./circly-project.png" alt="CIRCLY pavement project screenshot" class="project-image" />
+              <div class="hobby-icon">
+                <i class="fas fa-road"></i>
+              </div>
+              <h3>CIRCLY-Based Pavement Design</h3>
+              <p>
+                A pavement design project comparing flexible pavement structures under
+                different traffic levels using CIRCLY-based mechanistic analysis.
+              </p>
+            </div>
+      
+            <div class="hobby-card">
+              <img src="./plaxis-project.png" alt="PLAXIS 2D foundation project screenshot" class="project-image" />
+              <div class="hobby-icon">
+                <i class="fas fa-mountain"></i>
+              </div>
+              <h3>PLAXIS 2D Foundation Modelling</h3>
+              <p>
+                A geotechnical modelling project using PLAXIS 2D to evaluate footing
+                bearing capacity, settlement and deformation behaviour.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="favorites" class="section">
+        <div class="container">
+          <h2 class="section-title">Additional Experience & Engagement</h2>
+          <div class="favorites-container">
+            <div class="favorites-row">
+              <div class="favorite-card">
+                <h3><i class="fas fa-globe"></i> International Workshop</h3>
+                <h4>UTS FEIT Representative</h4>
+                <p>
+                  Participated in the International Strategic Management Workshop
+                  at Poznan University of Technology, developing teamwork,
+                  communication and strategic thinking skills.
+                </p>
+              </div>
+      
+              <div class="favorite-card">
+                <h3><i class="fas fa-hands-helping"></i> Volunteering</h3>
+                <h4>NSW International Student Volunteer Program</h4>
+                <p>
+                  Ongoing volunteer experience from November 2025, supporting
+                  community engagement and international student-related activities.
+                </p>
+              </div>
+      
+              <div class="favorite-card">
+                <h3><i class="fas fa-city"></i> Public Event Support</h3>
+                <h4>City of Sydney New Year's Eve Volunteer</h4>
+                <p>
+                  Supported large-scale public event operations and crowd guidance
+                  during Sydney New Year's Eve.
+                </p>
+              </div>
+            </div>
+      
+            <div class="favorites-row">
+              <div class="favorite-card">
+                <h3><i class="fas fa-award"></i> Leadership Development</h3>
+                <h4>UTS BUILD Program and UTS SOUL Award</h4>
+                <p>
+                  Developed global leadership, communication and community
+                  engagement skills through university-supported programs.
+                </p>
+              </div>
+      
+              <div class="favorite-card">
+                <h3><i class="fas fa-road"></i> Traffic Engineering Direction</h3>
+                <h4>Transport and Road Infrastructure</h4>
+                <p>
+                  Building technical interest in traffic engineering, transport
+                  planning, road engineering and pavement design.
+                </p>
+              </div>
+      
+              <div class="favorite-card">
+                <h3><i class="fas fa-mountain"></i> Geotechnical Direction</h3>
+                <h4>Ground and Infrastructure Assessment</h4>
+                <p>
+                  Continuing to develop knowledge in applied geotechnics, site
+                  investigation, PLAXIS 2D modelling and GIS-based spatial analysis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2026 Wentian Xiao. All rights reserved.</p>
+          </div>
+          <div class="social-icons">
+            <a href="mailto:SeanX0809@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/wentian-xiao-54985a321" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/SeanX0809" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>
